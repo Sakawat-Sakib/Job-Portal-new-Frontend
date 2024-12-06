@@ -7,10 +7,8 @@ const FindJobs = async ({ searchParams }) => {
 
   const jobs = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/job/?keyword=${
-      searchParams?.search || ""
-    }&location=${searchParams?.location || ""}&jobtype=${
-      searchParams?.jobtype || ""
-    }&salary=${searchParams?.salary || ""}`,
+      searchParams?.keyword || ""
+    }&location=${searchParams?.location || ""}&salary=${searchParams?.salary || ""}`,
     {
       cache: "no-cache",
     }

@@ -1,5 +1,4 @@
 "use server";
-
 import axios from "axios";
 
 export const register = async (formData, profile, resume) => {
@@ -150,3 +149,4 @@ export const userAppliedJobs = async (token) => {
     return res?.applications;
   } catch (error) {}
 };
+

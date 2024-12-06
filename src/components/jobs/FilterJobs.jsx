@@ -20,7 +20,7 @@ const FilterJobs = () => {
               {data?.array?.map((item, ind) => (
                 <Link
                   key={ind}
-                  href={`/findjobs?${data?.filterType}`}
+                  href={`/findjobs?${(data?.filterType).toLowerCase()}=${item}`}
                   className="flex items-center my-5 cursor-pointer"
                 >
                   <Label htmlFor={ind} className="cursor-pointer text-[#757575]">

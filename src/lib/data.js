@@ -13,12 +13,15 @@ export const filterData = [
     array: ["Dhaka", "Chattogram", "Rajshahi", "Khulna", "Sylhet", "Barishal"],
   },
   {
-    filterType: "Job Type",
+    filterType: "Keyword",
     array: [
-      "Frontend Developer",
-      "Backend Developer",
-      "Full Stack Developer",
-      "Web Developer",
+      "Frontend",
+      "Backend",
+      "Full Stack",
+      "Web",
+      "React",
+      "Engineer",
+      "Developer",
     ],
   },
   {
