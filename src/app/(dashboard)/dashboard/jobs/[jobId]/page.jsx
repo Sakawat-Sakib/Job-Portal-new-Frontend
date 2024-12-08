@@ -10,11 +10,11 @@ const JobId = async ({ params }) => {
     }
   );
   const applicants = await response.json();
-  console.log(applicants?.job?.applications?.[0]?.applicant, "response");
+  console.log(applicants?.job?.Application?.[0]?.applicant, "response");
 
   return (
     <div className="max-w-7xl mx-auto">
-      <h1 className="font-semibold text-xl my-5 text-white">Applicants</h1>
+      <h1 className="font-semibold text-xl my-5 text-[#757575]">Applicants</h1>
       <ApplicantsTable job={applicants?.job} />
     </div>
   );

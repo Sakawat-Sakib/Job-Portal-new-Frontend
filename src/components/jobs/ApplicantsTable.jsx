@@ -38,7 +38,7 @@ const ApplicantsTable = ({ job }) => {
   };
   return (
     <Table className="bg-white">
-      <TableCaption>A list of your jobs</TableCaption>
+      <TableCaption>A list of applicant</TableCaption>
       <TableHeader>
         <TableRow>
           <TableHead className="">Full Name</TableHead>
@@ -46,15 +46,15 @@ const ApplicantsTable = ({ job }) => {
           <TableHead>Image</TableHead>
           <TableHead>Date</TableHead>
           <TableHead>Status</TableHead>
-          <TableHead className="text-right">Action</TableHead>
+          <TableHead>Action</TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>
-        {job?.applications?.length
-          ? job?.applications?.map((application) => (
+        {job?.Application?.length
+          ? job?.Application?.map((application) => (
               <TableRow key={application.id}>
                 <TableCell className="font-medium">
-                  {application?.applicant?.fullname}
+                  {application?.applicant?.fullName}
                 </TableCell>
                 <TableCell>{application?.applicant?.email}</TableCell>
                 <TableCell>

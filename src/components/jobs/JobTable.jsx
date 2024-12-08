@@ -56,8 +56,8 @@ const JobTable = () => {
             <TableHead className="">Company Name</TableHead>
             <TableHead>Role</TableHead>
             <TableHead>Date</TableHead>
-            <TableHead>Applicants</TableHead>
             <TableHead>Action</TableHead>
+            <TableHead>Applicants</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
