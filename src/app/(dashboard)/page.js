@@ -4,7 +4,7 @@ import ShowCategories from "@/components/home/ShowCategories";
 import Image from "next/image";
 
 export default async function Home() {
-  const jobs = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/job?keyword=`, {
+  const jobs = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/job`, {
     cache: "no-cache",
   });
   const res = await jobs.json();
